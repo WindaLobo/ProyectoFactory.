@@ -1,5 +1,8 @@
 package enums;
 
+/**
+ * enum de TipoTransporte
+ */
 public enum TipoTransporte {
-    Camion, Bicicleta
+    Camion, Bicicleta,Barco
 }

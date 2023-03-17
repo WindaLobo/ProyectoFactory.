@@ -1,9 +1,9 @@
 import enums.TipoEmbalaje;
 
-public class Bicicleta implements ITransporte {
-
+public class Barco  implements ITransporte{
     /**
      *
+     * @param cp
      * @return precio
      */
     @Override
@@ -19,11 +19,17 @@ public class Bicicleta implements ITransporte {
 
     /**
      *
-     * @return total
+     * @param cp
+     * @param dimencionX
+     * @param dimencionY
+     * @param dimencionZ
+     * @param peso
+     * @return el tipo de enbalage
      */
-    @Override
-    public Integer tipoEmbalajae(Integer cp, Float dimencionX, Float dimencionY, Float dimencionZ, Float peso)  {
 
+
+    @Override
+    public Integer tipoEmbalajae(Integer cp, Float dimencionX, Float dimencionY, Float dimencionZ, Float peso) {
         float totalDimencion = dimencionX + dimencionY + dimencionZ;
         if (totalDimencion <= 30 && peso <= 10) {
             return TipoEmbalaje.CajaCarton.ordinal();
@@ -36,6 +42,4 @@ public class Bicicleta implements ITransporte {
         }
     }
 
-
 }
-

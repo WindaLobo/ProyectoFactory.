@@ -11,7 +11,7 @@ public class Camion implements ITransporte {
         Integer codigo = 37382;
         precio = (float) ((codigo - cp) * 2.8);
         if (cp > 36791 || cp < 34908) {
-            LibreriaEntradSalida.salida("Fuera de la zona ", LibreriaEntradSalida.CONSOLA);
+            System.out.println("Fuera de la zona ");
         }
 
         if (precio == 0) ;

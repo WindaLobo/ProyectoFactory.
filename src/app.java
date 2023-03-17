@@ -14,7 +14,7 @@ public class app {
      */
     public static void main(String[] args) throws Exception {
 
-        System.out.println("Implementation Biclicleta");
+        System.out.println("\n Implementation Biclicleta");
         Transporte = FactorySencilla.getProducto(TipoTransporte.Bicicleta);
         System.out.println(Transporte.costoTotal(36470));
         /**
@@ -39,5 +39,17 @@ public class app {
          * Sin values
          */
         System.out.println(Transporte.tipoEmbalajae(36470,2f,3f,5f,6f));
+
+
+        System.out.println("Implementation Barco");
+        Transporte = FactorySencilla.getProducto(TipoTransporte.Barco);
+        System.out.println(Transporte.costoTotal(36670));
+        System.out.println(TipoEmbalaje.values()[Transporte.tipoEmbalajae(36670,25f,100f,250f,35f)]);
+        /**
+         * Sin values
+         */
+        System.out.println(Transporte.tipoEmbalajae(36670,25f,100f,250f,35f));
+
+
     }
 }

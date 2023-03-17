@@ -15,6 +15,8 @@ public class FactorySencilla {
 
            case Camion:
                 return new Camion();
+            case Barco:
+                return new Barco();
 
             default:
                 return null;

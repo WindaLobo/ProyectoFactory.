@@ -3,6 +3,7 @@ classDiagram
 
       ITransporte <|.. Bicicleta: implements
             ITransporte <|.. Camion : implements
+              ITransporte <|.. Barco : implements
       class ITransporte{
      + Float costoTotal(Integer cp) 
     +Integer tipoEmbalaje (Integer cp,Float dimencionX,Float dimencionY, dimen-cionZ,Float peso)
@@ -25,7 +26,9 @@ classDiagram
       class Camion{
      + Float costoTotal(Integer cp) 
      + Integer tipoEmbalajae(Integer cp, Float dimencionX, Float dimencionY, Float dimencionZ, Float peso)} 
-  
+    class Barco{
+     + Float costoTotal(Integer cp) 
+     + Integer tipoEmbalajae(Integer cp, Float dimencionX, Float dimencionY, Float dimencionZ, Float peso)} 
   
       
 
