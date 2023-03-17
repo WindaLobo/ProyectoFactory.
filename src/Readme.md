@@ -33,3 +33,13 @@ classDiagram
       
 
 ````
+### Proyecto Factory
+
+   > Ejemplo de Factory , en el que vamos a paquetizar el código, para poder reutilizarlo. Y creo un JavaDoc completo.
+
+    Utilizó Intefaz (ITransporte) que implementa varias clases.
+    En el FactorySencilla utilizo la static  ITransporte en donde retrona el tipo de transporte.
+    Realizó un throws Exception FactorySencilla  en tener el controlde posible errores.
+    El  la app instancio el objecto  ITransporte Transporte para impletar el tipo de transporte 
+
+
